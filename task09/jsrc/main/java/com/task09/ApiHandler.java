@@ -25,11 +25,11 @@ import java.net.http.HttpResponse;
 
 
 @LambdaHandler(
-		lambdaName = "api_handler",
-		roleName = "api_handler-role",
-		isPublishVersion = true,
-		aliasName = "${lambdas_alias_name}",
-		logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED,
+    lambdaName = "api_handler",
+	roleName = "api_handler-role",
+	isPublishVersion = true,
+	aliasName = "${lambdas_alias_name}",
+	logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED,
 		layers = {"weatherClient"}
 )
 @LambdaLayer(
